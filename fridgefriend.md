@@ -59,7 +59,7 @@ except Exception as e:
     print(f"[MQTT] Could not connect: {e}. Sensor loop will still run.")
     mqtt_client = None
  
-# SENSOR FUNCTIONS  (unchanged from your original)
+# SENSOR FUNCTIONS 
 def get_distance():
     GPIO.output(TRIG, 0)
     time.sleep(0.000002)
